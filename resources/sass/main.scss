@@ -1,0 +1,37 @@
+
+//variables
+
+@import 'variables/colors';
+@import 'variables/breakpoints';
+@import 'variables/typography';
+
+
+//layouts
+
+@import 'layout/head';
+@import 'layout/footer';
+
+//components
+
+@import 'components/logo';
+@import 'components/menu';
+@import 'components/tartas';
+@import 'components/tarta';
+@import 'components/servicios';
+@import 'components/contacto';
+
+
+
+body{
+  background: $background-color-1;
+}
+
+section{
+  padding: 50px 0 50px 0;
+}
+
+.myContainer{
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+}

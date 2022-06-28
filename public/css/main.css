@@ -1,0 +1,569 @@
+@font-face {
+  font-family: "Coolvetica";
+  src: url("/imports/typography/Coolvetica.ttf") format("truetype");
+}
+
+.footer {
+  background: #5555ff;
+  color: white;
+  padding: 0;
+  width: 100vw;
+}
+
+.footer .footerContainer {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 50px;
+  text-align: center;
+  width: 100vw;
+}
+
+.footer .icon {
+  fill: white;
+  height: 20px;
+}
+
+.footer li {
+  list-style: none;
+  padding-top: 10px;
+  transition: all 0.2s;
+}
+
+.footer li:hover {
+  transform: scale(1.1);
+}
+
+.footerLogo {
+  text-align: center;
+  padding: -50px 0 0px 0;
+}
+
+.footerLogo img {
+  height: 100px;
+}
+
+.footerInfo {
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.footerInfo .icon {
+  height: 12px;
+}
+
+.footerInfo a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.footerRss {
+  margin-left: -20px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.footerRss ul {
+  margin-top: 20px;
+}
+
+.footerRss li {
+  display: inline;
+}
+
+.footerRss .icon {
+  height: 30px;
+  transition: all 0.2s;
+}
+
+.footerRss .icon:hover {
+  transform: scale(1.2);
+}
+
+.footerBanner {
+  font-size: 10px;
+  text-align: center;
+}
+
+.footerBanner div {
+  padding-bottom: 11px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer .footerContainer {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    text-align: left;
+  }
+
+  .footerInfo {
+    font-size: 13px;
+    text-align: left;
+    margin: auto;
+    opacity: 1;
+  }
+
+  .footerLogo {
+    text-align: center;
+    padding: 0;
+  }
+
+  .footerRss {
+    margin-left: 0;
+    padding-top: 0px;
+  }
+
+  .footerRss li {
+    margin-left: 10px;
+  }
+}
+
+.logo {
+  background: url("/img/logo/background.jpg");
+  height: 400px;
+  margin-top: 150px;
+  text-align: center;
+  opacity: 1;
+  width: 100vw;
+}
+
+.logoImg {
+  margin-top: 120px;
+  opacity: 1;
+  transition: all 0.6s;
+  width: 200px;
+}
+
+.logoImg-scrolldown {
+  opacity: 0;
+  transition: all 0.6s;
+  width: 200px;
+}
+
+.menu {
+  padding-top: 0;
+  position: fixed;
+  z-index: 15;
+}
+
+.menuContainer {
+  background: #f8f9fa;
+  display: grid;
+  grid-template-columns: 0% 60% 40%;
+  padding-top: 50px;
+  transition: all 0.6s;
+  width: 100vw;
+}
+
+.menuContainer-scrolldown {
+  background: #f8f9fa;
+  display: grid;
+  grid-template-columns: 0% 60% 40%;
+  padding-top: 0px;
+  transition: all 0.6s;
+  width: 100vw;
+}
+
+.navbarLogo {
+  margin-left: 176px;
+  opacity: 0;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.navbarLogo-scrolldown {
+  margin-left: 176px;
+  opacity: 0;
+  position: relative;
+  transition: all 0.4s;
+  z-index: 15;
+}
+
+.navbarLogo img,
+.navbarLogo-scrolldown img {
+  position: absolute;
+  left: 13%;
+  top: 25%;
+  width: 75px;
+}
+
+.navbar {
+  height: 80px;
+  position: inherit;
+  z-index: 5;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(85, 85, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.nav-item {
+  background: #f8f9fa;
+  padding: 0 20px 0 20px;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-size: 20px !important;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: #5555ff !important;
+  transform: scale(1.1);
+}
+
+.topInfo {
+  font-size: 15px;
+  margin-top: 19px;
+  padding: 10px;
+}
+
+.topInfo .icon {
+  padding: 0 5px 0 5px;
+  fill: #5555ff;
+  height: 20px;
+}
+
+.tlf {
+  transition: all 0.2s;
+}
+
+.tlf:hover {
+  transform: scale(1.1);
+}
+
+.tlf a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menuContainer {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    transition: all 0.6s;
+  }
+
+  .menuContainer-scrolldown {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    transition: all 0.6s;
+  }
+
+  .navbarLogo-scrolldown {
+    opacity: 1;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.tartaItem {
+  font-family: "Coolvetica", sans-serif;
+  letter-spacing: 1px;
+  padding: 0 20px 50px 20px;
+  text-align: center;
+  transition: all 0.2s;
+  width: calc(100%/1);
+}
+
+.tartaItem:hover {
+  transform: scale(1.1) !important;
+}
+
+.tartaItem:hover .tartaItemImg {
+  border: 0px;
+}
+
+.tartaItem:hover .tartasVerPrecios {
+  opacity: 0.9;
+}
+
+.tartaItemImg {
+  height: 200px;
+  transition: all 0.2s;
+}
+
+.tartaItem .tartaInfo {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.tartaBox {
+  position: relative;
+}
+
+.tartasVerPrecios {
+  background: #d8cd73;
+  color: white;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.2s;
+  top: 0;
+  width: 100%;
+}
+
+.tartasVerPrecios div {
+  margin-top: 90px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tartaItem {
+    width: calc(100%/3);
+  }
+}
+
+.tarta {
+  font-family: "Coolvetica", sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.tartaInfoTitle {
+  border-bottom: 1px #5555ff solid;
+  color: #5555ff;
+  font-size: 50px;
+  font-weight: bold;
+  width: 80%;
+}
+
+.tartaInfoTitle span {
+  margin-left: 10px;
+}
+
+.tartaImg {
+  text-align: center;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.tartaImg img {
+  padding-top: 100px;
+  width: 100vw;
+}
+
+.tarta .tartaInfo {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.tartaInfoPrecio,
+.tartaInfoIngredientes {
+  font-size: 20px;
+  margin: auto;
+  width: 60%;
+}
+
+.tartaInfoPrecioTitle,
+.tartaInfoIngredientesTitle {
+  border-bottom: 1px #5555ff solid;
+  color: #5555ff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tartaInfoPrecio {
+  text-align: center;
+}
+
+.tartaInfoPrecio table {
+  width: 100%;
+}
+
+.tartaInfoPrecio table thead {
+  color: #5555ff;
+  font-weight: bold;
+}
+
+.tartaInfoPrecio div {
+  padding-top: 20px;
+}
+
+.tartaInfoIngredientes {
+  padding-top: 100px;
+}
+
+.tartaInfoIngredientes ul {
+  margin-top: 20px;
+}
+
+.tartaInfoEncargo {
+  font-size: 25px;
+  padding-bottom: 100px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tartaGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 200px;
+  }
+
+  .tartaInfoTitle span {
+    font-size: 40px;
+    margin-left: 100px;
+  }
+
+  .tartaImg img {
+    padding-top: 0px;
+    width: 700px;
+  }
+
+  .tartaInfoIngredientes {
+    padding-top: 75px;
+  }
+}
+
+.servicios .container {
+  display: grid;
+  grid-template-columns: 100%;
+  padding-bottom: 100px;
+}
+
+.servicio {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: 1px #5555ff solid;
+  border-radius: 10px;
+  margin: 50px;
+  transition: all 0.2s;
+  z-index: 5;
+}
+
+.servicio:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.servicioLogo {
+  text-align: center;
+}
+
+.servicio .icon {
+  fill: #5555ff;
+  padding: 10px;
+  padding-top: 50px;
+  width: 40vw;
+}
+
+.servicioInfo {
+  padding: 10px;
+}
+
+.servicioInfoTitle {
+  color: #5555ff;
+  font-family: "Coolvetica", sans-serif;
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+.servicioInfoDescription {
+  font-size: 18px;
+  margin: auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .servicio .icon {
+    width: 120px;
+  }
+
+  .servicioInfoTitle {
+    font-size: 60px;
+  }
+}
+
+.contacto .container {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 150px 0 150px 0;
+}
+
+.contactoMaps iframe {
+  width: 100%;
+}
+
+.contactoMaps iframe,
+.contactoInfo {
+  padding: 10px;
+}
+
+.contactoInfo .contactImg {
+  margin-top: 80px;
+  margin-left: 100px;
+  height: 100px;
+}
+
+.contactoInfo .icon {
+  height: 20px;
+}
+
+.contactoInfo ul {
+  text-align: left;
+  margin-top: 60px;
+}
+
+.contactoInfo li {
+  list-style: none;
+  margin-top: 30px;
+  transition: all 0.2s;
+}
+
+.contactoInfo li:hover {
+  transform: scale(1.05);
+}
+
+.contactoInfo a,
+.contactoInfo li {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contacto .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .contactoInfo .contactImg {
+    margin-top: 0px;
+  }
+
+  .contactoInfo ul {
+    margin-left: 45px;
+  }
+}
+
+body {
+  background: #f8f9fa;
+}
+
+section {
+  padding: 50px 0 50px 0;
+}
+
+.myContainer {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+

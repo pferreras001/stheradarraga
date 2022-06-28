@@ -1,0 +1,119 @@
+.tarta{
+  font-family: $font-corporative;
+  color: $font-color-1;
+}
+
+.tartaInfoTitle{
+  border-bottom: 1px $font-color-2 solid;
+  color: $font-color-2;
+  font-size: 50px;
+  font-weight: bold;
+  width: 80%;
+}
+
+.tartaInfoTitle span{
+  margin-left: 10px;
+}
+
+.tartaImg{
+  text-align: center;
+  width: 100%;
+  opacity: .8;
+}
+
+.tartaImg img{
+  padding-top: 100px;
+  width: 100vw;
+}
+
+.tarta .tartaInfo{
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.tartaInfoPrecio, .tartaInfoIngredientes{
+  font-size: 20px;
+  margin: auto;
+  width: 60%;
+}
+
+.tartaInfoPrecioTitle, .tartaInfoIngredientesTitle{
+  border-bottom: 1px $font-color-2 solid;
+  color: $font-color-2;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tartaInfoPrecio{
+  text-align: center;
+}
+
+.tartaInfoPrecio table{
+  width: 100%;
+}
+
+.tartaInfoPrecio table thead{
+  color: $font-color-2;
+  font-weight: bold;  
+}
+
+.tartaInfoPrecio div{
+  padding-top:20px;
+}
+
+.tartaInfoIngredientes{
+  padding-top: 100px;
+}
+
+.tartaInfoIngredientes ul{
+  margin-top: 20px;
+}
+
+.tartaInfoEncargo{
+  font-size: 25px;
+  padding-bottom: 100px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+
+
+
+@media #{$breakpoints-medium} {
+
+}
+
+@media #{$breakpoints-large} {
+
+.tartaGrid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 200px;
+}
+
+.tartaInfoTitle span{
+  font-size: 40px;
+  margin-left: 100px;
+}
+
+
+.tartaImg img{
+  padding-top: 0px;
+  width: 700px;
+}
+
+.tarta .tartaInfo{
+
+}
+
+.tartaInfoIngredientes{
+  padding-top: 75px;
+}
+
+}
+
+
+@media #{$breakpoints-xlarge} {
+
+}

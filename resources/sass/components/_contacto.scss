@@ -1,0 +1,75 @@
+.contacto .container{
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 150px 0 150px 0;
+}
+
+.contactoMaps iframe{
+  width: 100%;
+}
+
+.contactoMaps iframe, .contactoInfo{
+  padding: 10px;
+}
+
+.contactoInfo{
+}
+
+.contactoInfo .contactImg{
+  margin-top: 80px;
+  margin-left: 100px;
+  height: 100px;
+}
+
+.contactoInfo .icon{
+  height: 20px;
+}
+
+.contactoInfo ul{
+  text-align: left;
+  margin-top: 60px;
+}
+
+.contactoInfo li{
+  list-style: none;
+  margin-top: 30px;
+  transition: all .2s;
+}
+
+.contactoInfo li:hover{
+
+  transform: scale(1.05);
+}
+
+.contactoInfo a, .contactoInfo li{
+  color: $font-color-1;
+  text-decoration: none;
+}
+
+
+@media #{$breakpoints-medium} {
+
+}
+
+@media #{$breakpoints-large} {
+
+.contacto .container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.contactoInfo .contactImg{
+  margin-top: 0px;
+}
+
+.contactoInfo ul{
+  margin-left: 45px;
+}
+
+
+}
+
+
+@media #{$breakpoints-xlarge} {
+
+}

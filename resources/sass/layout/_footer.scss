@@ -1,0 +1,128 @@
+.footer{
+  background: $background-color-2;
+  color: white;
+  padding:0;
+  width: 100vw;
+}
+
+.footer .footerContainer{
+  margin: auto;
+  display:grid;
+  grid-template-columns: 100%;
+  padding: 50px;
+  text-align: center;
+  width: 100vw;
+}
+
+.footer .icon{
+  fill: white;
+  height: 20px;
+}
+
+.footer li{
+  list-style: none;
+  padding-top: 10px;
+  transition: all .2s;
+}
+
+.footer li:hover{
+  transform: scale(1.1);
+}
+
+.footerLogo{
+  text-align: center;
+  padding: -50px 0 0px 0;
+}
+
+.footerLogo img{
+  height: 100px;
+}
+
+.footerInfo{
+  font-size: 20px;
+  opacity:0;
+  transition: all .2s;
+}
+
+.footerInfo .icon{
+  height:12px;
+}
+
+.footerInfo a{
+  color: white !important;
+  text-decoration: none;
+}
+
+.footerRss{
+  margin-left:-20px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.footerRss ul{
+  margin-top: 20px;
+}
+
+.footerRss li{
+  display:inline;
+}
+
+.footerRss .icon{
+  height:30px;
+  transition: all .2s;
+}
+
+.footerRss .icon:hover{
+  transform: scale(1.2);
+}
+
+.footerBanner{
+  font-size: 10px;
+  text-align: center;
+}
+
+.footerBanner div{
+  padding-bottom: 11px;
+}
+
+@media #{$breakpoints-medium} {
+
+}
+
+@media #{$breakpoints-large} {
+
+.footer .footerContainer{
+  display:grid;
+  grid-template-columns: 20% 60% 20%;
+  text-align: left;
+}
+
+.footerInfo{
+  font-size: 13px;
+  text-align: left;
+  margin: auto;
+  opacity:1;
+}
+
+.footerLogo{
+  text-align: center;
+  padding: 0;
+}
+
+.footerRss{
+  margin-left:0;
+  padding-top: 0px;
+}
+
+.footerRss li{
+  margin-left: 10px;
+}
+
+
+
+}
+
+
+@media #{$breakpoints-xlarge} {
+
+}

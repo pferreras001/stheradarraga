@@ -1,0 +1,81 @@
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.tartaItem{
+  font-family: $font-corporative;
+  letter-spacing: 1px;
+  padding: 0 20px 50px 20px;
+  text-align: center;
+  transition: all .2s;
+  width: calc(100%/1);
+}
+
+.tartaItem:hover{
+  transform: scale(1.1) !important;
+
+  .tartaItemImg{
+    border: 0px;
+  }
+
+  .tartasVerPrecios{
+    opacity: .9;
+  }
+
+}
+
+.tartaItemImg{
+  height: 200px;
+  transition: all .2s;
+}
+
+
+.tartaItem .tartaInfo{
+  color: $font-color-1;
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+  transition: all .2s;
+  width: 100%;
+}
+
+.tartaBox{
+  position: relative;
+}
+
+.tartasVerPrecios{
+  background: $background-color-3;
+  color: white;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: all .2s;
+  top: 0;
+  width: 100%;
+}
+
+.tartasVerPrecios div{
+  margin-top: 90px;
+}
+
+
+@media #{$breakpoints-medium} {
+
+}
+
+@media #{$breakpoints-large} {
+
+  .tartaItem{
+    width: calc(100%/3);
+  }
+
+
+}
+
+
+@media #{$breakpoints-xlarge} {
+
+}
